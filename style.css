@@ -1,0 +1,239 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f9;
+    color: #1f2937;
+}
+
+/* CORES PRINCIPAIS */
+/*
+Primária: #2563EB (azul moderno)
+Secundária: #1E40AF
+Accent: #F59E0B
+Neutro claro: #F4F6F9
+Neutro escuro: #1F2937
+*/
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    
+    
+    
+}
+
+/* HEADER */
+.cabecalho {
+    background: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border:solid 1px #2563EB;
+    background:   linear-gradient(180deg, #f4f6f9 60%, #b4ccff 120%);
+}
+
+.logo {
+    color: #2563EB;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    
+    
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+    justify-content: space-around;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.menu a:hover {
+    color: #2563EB;
+    font-size: 1.25rem;
+    
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #2563EB, #1E40AF);
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    
+}
+
+.hero p {
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    
+}
+
+.btn {
+    background: #F59E0B;
+    color: white;
+    padding: 1.7rem 2.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 900;
+    transition: 0.3s;
+    font-size: 1.3rem;
+    text-shadow: 0.5px 0.5px black;
+    box-shadow: 0 0 2px 0 black;
+    
+}
+
+.btn:hover {
+    background: #d97706;
+}
+
+/* BLOCOS DE SEÇÃO */
+.servicos {
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.servicos img{
+    width: 150px;
+    height: 150px;
+}
+
+.servicos h3{
+    font-size: 1.8rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.5s;
+}
+
+.card p{
+    font-size: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* BLOCOS DE CONTATOS*/
+
+.contatos {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contatos h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.caixa_btn_contatos{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+
+
+.contatos li{
+    background: #F59E0B;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    padding: 1.5rem 4rem;
+    width: 300px;
+    font-size: 1.7rem;
+}
+
+#Whatsapp:hover{
+    background-color: rgb(29, 207, 29);
+    transition: 1s;
+}
+
+#Instagram:hover{
+    background-color: rgb(201, 42, 121);
+    transition: 1s;
+}
+
+#GitHub:hover{
+    background-color: #1f2937;
+    transition: 1s;
+}
+
+#Linkedin:hover{
+    background-color: #419aff;
+    transition: 1s;
+}
+
+
+/* FOOTER */
+.rodape {
+    text-align: center;
+    padding: 1rem;
+    background: #1f2937;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* RESPONSIVO DESKTOP */
+@media (min-width: 768px) {
+
+    .cabecalho .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+        margin-top: 0;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .cards {
+        flex-direction: row;
+    }
+}
